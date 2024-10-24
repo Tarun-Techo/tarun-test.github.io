@@ -1,33 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Hello World!</title>
-<link rel="stylesheet" href="bluestyle.css">
-</head>
-<body>
+  <head>
+    <title>Tarun's Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial scale="1.0">
+    <link rel="stylesheet" href="css/simple.css">
+    <style>
+      header{position: sticky;
+      top:0;
+    }
+    nav{background-color: chocolate}
+    .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
-<h1>Hello world!</h1>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
     
-<p>This is the first file in my new Git Repo.</p>
-<p>A new line in our file.</p>
-<div ><img src="img_hello3_world.jpg" alt="Hello World from Space"
-    style="width:100%;max-width:960px"></div>
+    
+    </style>
+  </head>
+  
+  
+
+  <body>
+    
+    <header>
+    <nav>
+      <a href="index.html"area-current="page">Home</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Blog</button>
+        <div class="dropdown-content">
+      <a href="Blog/index.html">Blog</a>
+      <a href="../Blog/2024-10-12-whiskers.html">whiskers</a>
+      <a href="../Blog/2024-10-12-donuts.html">Donuts</a>
+      <a href="../Blog/2024-10-12-alliens.html">Alliens</a></div>
+      <a href="resume.html">Resume</a>
+      <a href="fun.html">Fun city</a>
+    </nav>
+    <h1>Tarun's Homepage</h1></header>
+    <main>
+      <figure>
+    <img src="image/space.jpg" alt="Photograph of beutiful flowers.">
+    <figcaption>Flowers make smile</figcaption>
+  </figure>
     <p>
-        image of workplace
+      My name is Tarun. I enjoy making websites and teaching others to do the same.
     </p>
-    <div ><img src="tarun,images/img_workplace.jpg" alt="Hello World from Space"
-        style="width:100%;max-width:960px"></div> 
-<p> this is another change </p>
-<div ><img src="img_car.jpeg" alt="Hello World from Space"
-    style="width:100%;max-width:960px"></div> 
-<p> this is another line changes </p>
-<p>
-    A line added by tarun 
-</p>
-<p>
-    a line further added by mr.Tarun chauhan
-</p>
-<p>programmer</p>
-</body>
+
+    <p>
+      Check out these cool web games at
+      <a href="https://neal.fun/">Neal.fun</a>!
+    </p>
+
+    <h2>Favorite board games</h2>
+
+    <ul>
+      <li>Dungeons & Dragons</li>
+      <li>Risk</li>
+      <li>Pandemic</li>
+    </ul>
+
+    <h2>How to make a website</h2>
+
+    <ol>
+      <li>Create an HTML file</li>
+      <li>Write some HTML in it</li>
+      <li>Open it with your web browser</li>
+    </ol>
+    <p class="notice">
+      <strong>
+        Want to learn how to make a website like this?</strong>
+        <br>Check out the free web book <a href="https://htmlforpeople.com/">HTML for People</a>. It's made for everyone and teaches you how to make a webpage in a friendly, approachable way.
+      
+    </p>
+    <iframe src="https://giphy.com/embed/UuB5lh1bL1Dl6svihe" width="250" height="250" style: frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+</main>
+
+    <footer>
+        <p>Made with ❤️ and ☕️ by Tarun chauhan.</p>
+      </footer>
+  </body>
 </html>
