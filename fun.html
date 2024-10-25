@@ -7,6 +7,52 @@
     <link rel="stylesheet" href="css/simple.css">
     <link rel="stylesheet" href="css/lite-yt-embed.min.css">
   <script src="js/lite-yt-embed.min.js"></script>
+  <style>
+    header{position: sticky;
+   top:0;
+ }
+ nav{background-color: chocolate}
+ .dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+}
+ 
+ </style>
   
   </head>
   
@@ -17,7 +63,13 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Blog</button>
+        <div class="dropdown-content">
       <a href="Blog/index.html">Blog</a>
+      <a href="../Blog/2024-10-12-whiskers.html">whiskers</a>
+      <a href="../Blog/2024-10-12-donuts.html">Donuts</a>
+      <a href="../Blog/2024-10-12-alliens.html">Alliens</a></div>
       <a href="resume.html">Resume</a>
       <a href="fun.html" area-current="page">Fun city</a>
     </nav>
